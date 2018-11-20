@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);/*!
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);@import url(https://fonts.googleapis.com/css?family=Bad+Script);/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10467,7 +10467,7 @@ a.text-dark:focus {
 }
 
 body {
-  background: #1f1f1f;
+  background: #97989a;
 }
 
 .no-padding {
@@ -10476,15 +10476,12 @@ body {
 }
 
 #main .container-fluid {
-  margin: 0;
-  padding: 0;
   margin: auto;
   border: 0;
 }
 
 #main .hero {
   background: white;
-  padding-bottom: 80px;
 }
 
 #main .hero img {
@@ -10503,8 +10500,8 @@ body {
 }
 
 #main .services .service-container {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1f1f1f), color-stop(50%, #fff));
-  background-image: linear-gradient(bottom, #1f1f1f 50%, #fff 50%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #97989a), color-stop(50%, #fff));
+  background-image: linear-gradient(bottom, #97989a 50%, #fff 50%);
 }
 
 #main .services .service-container .service {
