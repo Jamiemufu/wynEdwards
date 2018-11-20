@@ -1,14 +1,58 @@
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 // Variables
-@import 'variables';
-
+@import 'modules/variables';
+@import 'modules/header';
+@import 'modules/footer';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+//Styles
+body {
+    background: $dark;
+}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+//home
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        border: 0;
+    }
+    .hero {
+        background: white;
+        padding-bottom: 80px;
+        img {
+            margin: auto;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .services {
+        padding-bottom: 100px;
+        .service-container {
+            background-image: linear-gradient(bottom, $dark 50%, $white 50%);
+            .service {
+                width: 100%;
+                margin: auto !important;
+                border: none;
+                background-color: $brand;
+                padding: 0;
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
