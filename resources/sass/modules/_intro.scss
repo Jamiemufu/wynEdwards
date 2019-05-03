@@ -20,6 +20,12 @@
         background-attachment: scroll;
         background-size: cover;
     }
+
+    @media (max-width: 600px) {
+        span {
+            display: none;
+        }
+    }
 }
 
 .intro--content {

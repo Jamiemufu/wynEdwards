@@ -10675,7 +10675,7 @@ a.text-dark:focus {
 }
 
 .card .card--content {
-  background: rgba(241, 97, 0, 0.8);
+  background: rgba(241, 97, 0, 0.7);
   position: absolute;
   padding: 0 15px;
   height: 100%;
@@ -10740,6 +10740,12 @@ a.text-dark:focus {
   .intro {
     background-attachment: scroll;
     background-size: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro span {
+    display: none;
   }
 }
 

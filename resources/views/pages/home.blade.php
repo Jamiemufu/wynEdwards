@@ -19,7 +19,7 @@
 
 <section class="intro" id="intro">
     <div class="intro--content">
-        <h1>Professional - Qualified - Reliable</h1>
+        <h1>Professional <span>-</span> Qualified <span>-</span> Reliable</h1>
         <p>Limited Company Number 11285968</p>
         <p>Welcome to the Wyn Edwards Electrical website, We are a family run electrical installation company based
             in Rhyl, on the beautiful North Wales coast. We undertake a variety of work from simple socket changes
