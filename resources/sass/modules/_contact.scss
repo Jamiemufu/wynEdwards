@@ -40,16 +40,18 @@
     form {
 
         input {
-            border: 2px solid white;
+            border: none;
+            border-radius: 5px;
             margin: 18px;
-            padding: 7px;
+            padding: 12px;
             width: 100%;
             max-width: 400px;
         }
 
         textarea {
-            border: 2px solid white;
-            padding: 10px;
+            border: none;
+            border-radius: 12px;
+            padding: 8px;
             width: 100%;
             max-width: 400px;
         }
@@ -128,6 +130,7 @@
 
     @media (max-width: 700px) {
         padding: 15px;
+        padding-bottom: 60px;
         width: 100%;
 
         h1 {

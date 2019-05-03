@@ -10855,16 +10855,18 @@ a.text-dark:focus {
 }
 
 .contact--content form input {
-  border: 2px solid white;
+  border: none;
+  border-radius: 5px;
   margin: 18px;
-  padding: 7px;
+  padding: 12px;
   width: 100%;
   max-width: 400px;
 }
 
 .contact--content form textarea {
-  border: 2px solid white;
-  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
   width: 100%;
   max-width: 400px;
 }
@@ -10964,6 +10966,7 @@ a.text-dark:focus {
 @media (max-width: 700px) {
   .contact--content {
     padding: 15px;
+    padding-bottom: 60px;
     width: 100%;
   }
 

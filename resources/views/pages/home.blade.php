@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="contact--query">
-                    <textarea name="query" id="query" cols="30" rows="8" placeholder="Query"></textarea>
+                    <textarea name="query" id="query" cols="30" rows="9" placeholder="Query"></textarea>
                 </div>
             </div>
 
