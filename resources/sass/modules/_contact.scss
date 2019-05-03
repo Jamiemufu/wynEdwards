@@ -1,0 +1,29 @@
+.contact {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: $brandgray;
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    // backgroud image stuff
+    background-image: url('/images/contact_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    @media (max-width: 850px) {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    @media (max-width: 600px) {
+        span {
+            display: none;
+        }
+    }
+}

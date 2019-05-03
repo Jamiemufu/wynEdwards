@@ -10514,6 +10514,12 @@ a.text-dark:focus {
   font-size: 50px;
 }
 
+@media (max-width: 800px) {
+  #splash_arrow {
+    bottom: 2%;
+  }
+}
+
 #intro_arrow {
   position: absolute;
   bottom: 5%;
@@ -10526,6 +10532,32 @@ a.text-dark:focus {
   text-align: center;
   color: white;
   font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  #intro_arrow {
+    bottom: 2%;
+  }
+}
+
+#services_arrow {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#services_arrow i {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  #services_arrow {
+    bottom: 1%;
+  }
 }
 
 .fa-bounce {
@@ -10574,6 +10606,7 @@ a.text-dark:focus {
 /* SERVICES */
 
 .services {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10614,6 +10647,10 @@ a.text-dark:focus {
   padding: 0;
 }
 
+.services--content p:last-of-type {
+  font-size: 12px;
+}
+
 .cards--container {
   margin: 0 auto;
   max-width: 1200px;
@@ -10633,6 +10670,7 @@ a.text-dark:focus {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .cards--container h3 {
@@ -10761,14 +10799,14 @@ a.text-dark:focus {
 
 .intro--content h1 {
   font-weight: bold;
-  line-height: 70px;
+  line-height: 50px;
   font-size: 45px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
 }
 
 .intro--content p {
-  margin-top: -15px;
+  margin-top: -5px;
   padding: 0;
 }
 
@@ -10776,6 +10814,53 @@ a.text-dark:focus {
   font-family: "Nunito", sans-serif;
   padding-top: 60px;
   font-size: 18px;
+}
+
+@media (max-width: 700px) {
+  .intro--content h1 {
+    line-height: 50px;
+    font-size: 38px;
+  }
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: #96989A;
+  padding: 100px 20px 100px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("/images/contact_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 850px) {
+  .contact {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact span {
+    display: none;
+  }
 }
 
 body {
