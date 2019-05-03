@@ -1,0 +1,47 @@
+.intro {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: $brandgray;
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    // backgroud image stuff
+    background-image: url('/images/guards.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.intro--content {
+    margin: auto;
+    max-width: 1200px;
+    background: rgba($color: black, $alpha: 0.6 );
+    color: white;
+    padding: 50px;
+    text-align: center;
+
+    h1 {
+        font-weight: bold;
+        line-height: 70px;
+        font-size: 45px;    
+        text-align: center;
+        font-family: $font-brand;
+    }
+    p {
+        margin-top: -15px;
+        padding: 0;
+    }
+
+    p:last-of-type {
+        font-family: $font-family-sans-serif;
+        padding-top: 60px;
+        font-size: 18px;
+    }
+
+}

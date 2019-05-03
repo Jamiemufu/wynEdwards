@@ -1,0 +1,52 @@
+.cards--container {
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 100px 0 100px 0;
+    max-width: 1750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    //general styles for cards
+    h3 {
+        font-size: 14px;
+        font-family: $font-brand;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        font-family: $font-family-sans-serif;
+    }
+}
+
+.card {
+    background-color: white;
+    color: $brandgray;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 510px;
+    width: 25%;
+    min-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+
+    .card--content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        flex-grow: 1;
+
+        h3 {
+            text-transform: uppercase;
+            padding: 5px 0;
+        }
+    }
+
+}

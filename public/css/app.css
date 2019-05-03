@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);@import url(https://fonts.googleapis.com/css?family=Bad+Script);nav {
   position: absolute;
-  right: 0;
+  left: 0;
 }
 
 nav i {
   padding: 25px;
   font-size: 30px;
-  color: #97989a;
+  color: #96989A;
 }
 
 /*!
@@ -10477,20 +10477,6 @@ a.text-dark:focus {
   }
 }
 
-body {
-  background: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 /* SPLASH PAGE CONTAINER */
 
 .splash {
@@ -10511,18 +10497,9 @@ h5 {
           flex-direction: column;
 }
 
-/* SERVICES */
-
-.services {
-  min-height: 100vh;
-  background: #F58634;
-}
-
-/* TESTIMONIALS */
-
 /* ARROW */
 
-#arrow {
+#splash_arrow {
   position: absolute;
   bottom: 5%;
   left: 0;
@@ -10530,9 +10507,23 @@ h5 {
   text-align: center;
 }
 
-#arrow i {
+#splash_arrow i {
   text-align: center;
-  color: #97989a;
+  color: #96989A;
+  font-size: 50px;
+}
+
+#intro_arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#intro_arrow i {
+  text-align: center;
+  color: white;
   font-size: 50px;
 }
 
@@ -10577,5 +10568,168 @@ h5 {
   100% {
     top: 0;
   }
+}
+
+/* SERVICES */
+
+.services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F58634;
+}
+
+.cards--container {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 100px 0 100px 0;
+  max-width: 1750px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards--container h3 {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.cards--container p {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.card {
+  background-color: white;
+  color: #96989A;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  height: 510px;
+  width: 25%;
+  min-width: 300px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .card--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card .card--content h3 {
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.intro {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: #96989A;
+  padding: 100px 20px 100px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("/images/guards.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.intro--content {
+  margin: auto;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.intro--content h1 {
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.intro--content p {
+  margin-top: -15px;
+  padding: 0;
+}
+
+.intro--content p:last-of-type {
+  font-family: "Nunito", sans-serif;
+  padding-top: 60px;
+  font-size: 18px;
+}
+
+body {
+  background: #fff;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

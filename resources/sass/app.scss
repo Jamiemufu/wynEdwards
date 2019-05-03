@@ -2,20 +2,31 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
 // Variables
 @import 'modules/variables';
+
+//header/footer
 @import 'modules/header';
 @import 'modules/footer';
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//modules
+@import 'modules/splash.scss';
+@import 'modules/services.scss';
+@import 'modules/cards.scss';
+@import 'modules/intro.scss';
+
 //Styles
 body {
     background: #fff;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 // typography
-h1,
+h1, 
 h2,
 h3,
 h4,
@@ -23,121 +34,3 @@ h5 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* SPLASH PAGE CONTAINER */
-.splash {
-    position: relative;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   
-}
-
-/* SERVICES */
-.services {
-    min-height: 100vh;
-    background: $brandorange;
-}
-
-/* TESTIMONIALS */
-
-/* ARROW */
-#arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    i {
-        text-align: center;
-        color: $brandgray;
-        font-size: 50px;
-    }
-}
-
-.fa-bounce {
-    display: inline-block;
-    position: relative;
-    -moz-animation: bounce 1s infinite linear;
-    -o-animation: bounce 1s infinite linear;
-    -webkit-animation: bounce 1s infinite linear;
-    animation: bounce 1s infinite linear;
-}
-
-@-webkit-keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: -0.2em;
-    }
-    70% {
-        top: -0.3em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@-moz-keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: -0.2em;
-    }
-    70% {
-        top: -0.3em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@-o-keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: -0.2em;
-    }
-    70% {
-        top: -0.3em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@-ms-keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: -0.2em;
-    }
-    70% {
-        top: -0.3em;
-    }
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes bounce {
-    0% {
-        top: 0;
-    }
-    50% {
-        top: -0.2em;
-    }
-    70% {
-        top: -0.3em;
-    }
-    100% {
-        top: 0;
-    }
-}
