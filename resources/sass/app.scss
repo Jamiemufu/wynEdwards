@@ -1,0 +1,37 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+// Variables
+@import 'modules/variables';
+
+//header/footer
+@import 'modules/header';
+@import 'modules/footer';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//modules
+@import 'modules/splash.scss';
+@import 'modules/services.scss';
+@import 'modules/cards.scss';
+@import 'modules/intro.scss';
+@import 'modules/contact.scss';
+
+//Styles
+body {
+    background: $white;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+}
+
+// typography
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
