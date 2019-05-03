@@ -10693,6 +10693,7 @@ a.text-dark:focus {
 
 .intro--content {
   margin: auto;
+  width: 100%;
   max-width: 1200px;
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -10723,6 +10724,7 @@ body {
   background: #fff;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
+  overflow-x: hidden !important;
 }
 
 h1,
