@@ -10691,6 +10691,13 @@ a.text-dark:focus {
   background-attachment: fixed;
 }
 
+@media (max-width: 600px) {
+  .intro {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 .intro--content {
   margin: auto;
   width: 100%;
