@@ -102,7 +102,7 @@
     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
-            <img src="{{ asset('images/callout.jpg') }}" alt="" width="100%">
+            <img src="{{ asset('images/van.jpg') }}" alt="" width="100%">
         </div>
         {{-- card content - will grow --}}
         <div class="card--content">

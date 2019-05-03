@@ -12,39 +12,8 @@
 }
 
 /* ARROW */
-#splash_arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    i {
-        text-align: center;
-        color: $brandgray;
-        font-size: 50px;
-    }
-    @media (max-width: 800px) {
-        bottom: 2%;
-    }
-}
 
-#intro_arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    i {
-        text-align: center;
-        color: white;
-        font-size: 50px;
-    }
-    @media (max-width: 800px) {
-        bottom: 2%;
-    }
-}
-
-#services_arrow {
+#services_arrow,#contact_arrow, #intro_arrow, #splash_arrow {
     position: absolute;
     bottom: 4%;
     left: 0;
@@ -58,6 +27,25 @@
 
     @media (max-width: 800px) {
         bottom: 1%;
+    }
+}
+
+#splash_arrow {
+    i {
+        color: $brandgray;
+    }
+}
+
+#intro_arrow {
+    i {
+        color: white;
+    }
+}
+
+
+#contact_arrow {
+    i {
+        color: white;
     }
 }
 

@@ -10500,47 +10500,10 @@ a.text-dark:focus {
 
 /* ARROW */
 
+#services_arrow,
+#contact_arrow,
+#intro_arrow,
 #splash_arrow {
-  position: absolute;
-  bottom: 5%;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-#splash_arrow i {
-  text-align: center;
-  color: #96989A;
-  font-size: 50px;
-}
-
-@media (max-width: 800px) {
-  #splash_arrow {
-    bottom: 2%;
-  }
-}
-
-#intro_arrow {
-  position: absolute;
-  bottom: 5%;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-#intro_arrow i {
-  text-align: center;
-  color: white;
-  font-size: 50px;
-}
-
-@media (max-width: 800px) {
-  #intro_arrow {
-    bottom: 2%;
-  }
-}
-
-#services_arrow {
   position: absolute;
   bottom: 4%;
   left: 0;
@@ -10548,16 +10511,34 @@ a.text-dark:focus {
   text-align: center;
 }
 
-#services_arrow i {
+#services_arrow i,
+#contact_arrow i,
+#intro_arrow i,
+#splash_arrow i {
   text-align: center;
   color: black;
   font-size: 50px;
 }
 
 @media (max-width: 800px) {
-  #services_arrow {
+  #services_arrow,
+  #contact_arrow,
+  #intro_arrow,
+  #splash_arrow {
     bottom: 1%;
   }
+}
+
+#splash_arrow i {
+  color: #96989A;
+}
+
+#intro_arrow i {
+  color: white;
+}
+
+#contact_arrow i {
+  color: white;
 }
 
 .fa-bounce {
@@ -10860,6 +10841,135 @@ a.text-dark:focus {
 @media (max-width: 600px) {
   .contact span {
     display: none;
+  }
+}
+
+.contact--content {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact--content form input {
+  border: 2px solid white;
+  margin: 18px;
+  padding: 7px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact--content form textarea {
+  border: 2px solid white;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact--content form button {
+  margin-top: 25px;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 200px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .contact--content form input {
+    max-width: 100%;
+  }
+
+  .contact--content form textarea {
+    max-width: 100%;
+  }
+}
+
+.contact--content h1 {
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contact--content p:first-of-type {
+  padding-top: 15px;
+}
+
+.contact--content p {
+  font-size: 18px;
+  padding: 0;
+}
+
+.contact--content .contact--form {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.contact--content .contact--form .contact--inputs {
+  width: 100%;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact--content .contact--form .contact--query {
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 15px;
+}
+
+@media (max-width: 1150px) {
+  .contact--content .contact--form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact--content {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contact--content h1 {
+    line-height: 50px;
+    font-size: 38px;
   }
 }
 

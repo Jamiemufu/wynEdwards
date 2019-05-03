@@ -21,7 +21,10 @@
     <div class="intro--content">
         <h1>Professional <span>-</span> Qualified <span>-</span> Reliable</h1>
         <p>Limited Company Number 11285968</p>
-        <p>Welcome to the Wyn Edwards Electrical website, We are a family run electrical installation company based in Rhyl, on the beautiful North Wales coast. We undertake a variety of work from simple socket changes to full re-wires. We take great pride in our work and our business relies on our customer satisfaction. If you visit our Facebook page you can see our 5 star feedback.</p>
+        <p>Welcome to the Wyn Edwards Electrical website, We are a family run electrical installation company based in
+            Rhyl, on the beautiful North Wales coast. We undertake a variety of work from simple socket changes to full
+            re-wires. We take great pride in our work and our business relies on our customer satisfaction. If you visit
+            our Facebook page you can see our 5 star feedback.</p>
     </div>
 
     <div class="arrow" id="intro_arrow">
@@ -49,13 +52,42 @@
     </div>
 </section>
 {{-- END SERVICES --}}
+
+{{-- CONTACT SECTION --}}
 <section class="contact" id="contact">
     <div class="contact--content">
+        <h1>Contact Me</h1>
+        <p>Please feel free to fill in the form below and get in touch.</p>
+        <p> Wether it's for a quote, some feedback or any question you many about electronics or my services.<br> I will
+            repsond at my earliest convenience. You can also contact me on facebook.</p>
 
+        <form action="POST" method="">
+            @csrf
+            <div class="contact--form">
+                <div class="contact--inputs">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+
+                <div class="contact--query">
+                    <textarea name="query" id="query" cols="30" rows="8" placeholder="Query"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <div class="arrow" id="contact_arrow">
+        <a href="#services">
+            <i class="fas fa-chevron-down fa-bounce"></i>
+        </a>
     </div>
 </section>
 {{-- TESTIMONIALS --}}
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
 
 </section>
 {{-- END TESTIMONIALS --}}
