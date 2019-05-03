@@ -56,10 +56,10 @@
 {{-- CONTACT SECTION --}}
 <section class="contact" id="contact">
     <div class="contact--content">
-        <h1>Contact Me</h1>
+        <h1>Contact me</h1>
         <p>Please feel free to fill in the form below and get in touch.</p>
-        <p> Wether it's for a quote, some feedback or any question you many about electronics or my services.<br> I will
-            repsond at my earliest convenience. You can also contact me on facebook.</p>
+        <p> Wether it's for a quote, some feedback or any questions you many about electronics or my services.<br> I will
+            respond as soon as possible. You can also contact me on facebook.</p>
 
         <form action="POST" method="">
             @csrf
