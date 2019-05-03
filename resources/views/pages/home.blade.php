@@ -28,7 +28,7 @@
     </div>
 
     <div class="arrow" id="intro_arrow">
-        <a href="#cards">
+        <a href="#services">
             <i class="fas fa-chevron-down fa-bounce"></i>
         </a>
     </div>
@@ -36,7 +36,11 @@
 
 {{-- SERVICES-CONTAINER --}}
 <section class="services" id="services">
-
+    <div class="services--content">
+        <h1>Services</h1>
+       <p>Here are some of the services I offer. Please feel free to contact me for a quote, or if any service is required that's not on this list.</p>
+    </div>
+    
     @include('includes.cards')
 
 </section>

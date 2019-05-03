@@ -1,4 +1,4 @@
 <!-- start header -->
-<nav>
+{{-- <nav>
     <i class="fas fa-bars"></i>
-</nav>
+</nav> --}}

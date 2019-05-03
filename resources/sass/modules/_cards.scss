@@ -1,52 +1,92 @@
 .cards--container {
-    margin: 0 auto;
-    min-height: 100vh;
-    padding: 100px 0 100px 0;
-    max-width: 1750px;
+    margin: 0 auto;   
+    max-width: 1200px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
+
     //general styles for cards
+
     h3 {
         font-size: 14px;
         font-family: $font-brand;
         font-weight: bold;
+        color: white;
     }
 
     p {
         font-size: 14px;
         font-family: $font-family-sans-serif;
+        color: white;
     }
 }
 
 .card {
-    background-color: white;
+    background-color: $brandorange;
     color: $brandgray;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    border: none;
-    height: 510px;
-    width: 25%;
-    min-width: 300px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-height: 290px;
+    width: 100%;
+    max-width: 350px;
     overflow: hidden;
-    margin: 10px;
+    margin: 20px;
+    border: 1px solid $brandorange;
 
-    .card--content {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        flex-grow: 1;
+    .card--img {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
 
-        h3 {
-            text-transform: uppercase;
-            padding: 5px 0;
+        img {
+            height: 300px;
+            width: auto;
         }
+
     }
 
+    .card--content {
+        background:
+            rgba($color: $brandorange, $alpha: 0.8);
+        position: absolute;
+        padding: 0 15px;
+        height: 100%;
+        opacity: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition-duration: 0.4s;
+    }
+
+}
+
+.card:active,
+.card:hover .card--img {
+
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+}
+
+.card:active,
+.card:hover .card--content {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    filter: blur(0);
+    -webkit-filter: blur(0);
 }
