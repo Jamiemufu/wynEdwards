@@ -1,7 +1,8 @@
 /* SPLASH PAGE CONTAINER */
 .splash {
     position: relative;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11,29 +12,40 @@
 }
 
 /* ARROW */
-#splash_arrow {
+
+#services_arrow,#contact_arrow, #intro_arrow, #splash_arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 4%;
     left: 0;
     right: 0;
     text-align: center;
     i {
         text-align: center;
-        color: $brandgray;
+        color: black;
         font-size: 50px;
+    }
+
+    @media (max-width: 800px) {
+        bottom: 1%;
+    }
+}
+
+#splash_arrow {
+    i {
+        color: $brandgray;
     }
 }
 
 #intro_arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    text-align: center;
     i {
-        text-align: center;
         color: white;
-        font-size: 50px;
+    }
+}
+
+
+#contact_arrow {
+    i {
+        color: white;
     }
 }
 
