@@ -3,7 +3,7 @@
 {{-- card container --}}
 <div class="cards--container" id="cards">
 
-    <div class="card">
+    <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-    <div class="card">
+     <div class="card" onclick="">
         {{-- card image --}}
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
