@@ -8,9 +8,9 @@
         <div class="card--img">
             <img src="{{ asset('images/rewire.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Full Electrical Re-wires</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Full Electrical Re-wires</h3>
@@ -26,9 +26,9 @@
         <div class="card--img">
             <img src="{{ asset('images/pat.png') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Portable Appliance Testing</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Portable Appliance Testing</h3>
@@ -43,9 +43,9 @@
         <div class="card--img">
             <img src="{{ asset('images/kitchen.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Kitchen Extension/Upgrade</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Kitchen Extension/Upgrade</h3>
@@ -61,9 +61,9 @@
         <div class="card--img">
             <img src="{{ asset('images/sec.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Security Lighting</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Security Lighting</h3>
@@ -79,9 +79,9 @@
         <div class="card--img">
             <img src="{{ asset('images/fault.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Fault Finding</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Fault Finding</h3>
@@ -97,9 +97,9 @@
         <div class="card--img">
             <img src="{{ asset('images/garage.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Outdoor Electric & Garages</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Outdoor Electric & Garages</h3>
@@ -115,9 +115,9 @@
         <div class="card--img">
             <img src="{{ asset('images/water.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Water Damage</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Water Damage</h3>
@@ -132,9 +132,9 @@
         <div class="card--img">
             <img src="{{ asset('images/outlet.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Caravan Power Outlets</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Caravan Power Outlets</h3>
@@ -149,9 +149,9 @@
         <div class="card--img">
             <img src="{{ asset('images/van.jpg') }}" alt="" width="100%">
         </div>
-        <div class="card--title">
+        {{-- <div class="card--title">
             <h2>Emergency Call-Out</h2>
-        </div>
+        </div> --}}
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Emergency Call-Out</h3>
