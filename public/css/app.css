@@ -10671,9 +10671,9 @@ a.text-dark:focus {
   height: auto;
   max-height: 290px;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   overflow: hidden;
-  margin: 15px;
+  margin: 20px;
   border: 1px solid #F16100;
 }
 
@@ -10737,25 +10737,35 @@ a.text-dark:focus {
 }
 
 .card .card--content h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .card .card--content p {
   font-size: 14px;
 }
 
-.card:active,
+.card:active .card--img {
+  filter: blur(7px);
+  -webkit-filter: blur(7px);
+}
+
+.card:active .card--content {
+  opacity: 1;
+}
+
+.card:active .card--title {
+  display: none;
+}
+
 .card:hover .card--img {
   filter: blur(7px);
   -webkit-filter: blur(7px);
 }
 
-.card:active,
 .card:hover .card--content {
   opacity: 1;
 }
 
-.card:active,
 .card:hover .card--title {
   display: none;
 }
