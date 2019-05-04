@@ -10765,7 +10765,6 @@ a.text-dark:focus {
 .intro {
   position: relative;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   height: 100%;
   width: 100%;
   background: #96989A;
@@ -10842,7 +10841,6 @@ a.text-dark:focus {
 .contact {
   position: relative;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   width: 100%;
   background: #96989A;
   padding: 100px 20px 100px 20px;
@@ -11144,7 +11142,6 @@ nav i {
 footer {
   position: relative;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11347,12 +11344,6 @@ body {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
   overflow-x: hidden !important;
-}
-
-@media screen {
-  body {
-    cursor: pointer;
-  }
 }
 
 h1,
