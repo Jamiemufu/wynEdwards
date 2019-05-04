@@ -25,6 +25,10 @@ body {
     background: $white;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
+
+    @media screen {
+        cursor: pointer;
+    }
 }
 
 // typography

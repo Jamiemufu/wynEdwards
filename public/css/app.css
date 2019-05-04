@@ -11349,6 +11349,12 @@ body {
   overflow-x: hidden !important;
 }
 
+@media screen {
+  body {
+    cursor: pointer;
+  }
+}
+
 h1,
 h2,
 h3,
