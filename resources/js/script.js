@@ -1,4 +1,18 @@
-
+$(document).ready(function(){
+  $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 6000,
+      arrows: false,
+      speed: 1000,
+      fade: true,
+      draggable: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      swipe: false,
+      touchMove: false,
+      cssEase: 'linear'
+  });
+});
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

@@ -10672,9 +10672,9 @@ a.text-dark:focus {
   height: auto;
   max-height: 290px;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   overflow: hidden;
-  margin: 20px;
+  margin: 15px;
   border: 1px solid #F16100;
 }
 
@@ -10738,7 +10738,7 @@ a.text-dark:focus {
 }
 
 .card .card--content h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .card .card--content p {
@@ -10890,7 +10890,6 @@ a.text-dark:focus {
 .contact--content form input {
   border: none;
   border-radius: 5px;
-  border: 1px solid #F16100;
   margin: 18px;
   padding: 12px;
   width: 100%;
@@ -10900,7 +10899,6 @@ a.text-dark:focus {
 
 .contact--content form textarea {
   border: none;
-  border: 1px solid #F16100;
   border-radius: 5px;
   padding: 8px;
   width: 100%;
@@ -11063,6 +11061,24 @@ a.text-dark:focus {
 
 .testimonials .testimonials--title p {
   font-size: 18px;
+}
+
+.testimonials .slider {
+  width: 100%;
+  max-width: 1200px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+}
+
+.testimonials .slider.slick-initialized {
+  opacity: 1;
+}
+
+.testimonials .slick-slide:focus {
+  outline: none;
 }
 
 .testimonials .testimonials--customer {

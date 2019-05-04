@@ -28,6 +28,22 @@
             font-size: 18px;
         }
     }
+    .slider {
+        width: 100%;
+        max-width: 1200px;
+        border: none;
+        outline: none;
+        opacity: 0;
+        transition: opacity 1s ease;
+        -webkit-transition: opacity 1s ease;
+    }
+
+    .slider.slick-initialized {
+        opacity: 1;    
+    }
+
+    // slick border fix
+    .slick-slide:focus { outline: none; }
 
     .testimonials--customer {
         width: 100%;

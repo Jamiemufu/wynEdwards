@@ -32,9 +32,9 @@
     height: auto;
     max-height: 290px;
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     overflow: hidden;
-    margin: 20px;
+    margin: 15px;
     border: 1px solid $brandorange;
 
     .card--img {
@@ -50,7 +50,6 @@
     }
 
     .card--title {
-
         width: 100%;
         position: absolute;
         padding: 0 15px;
@@ -83,7 +82,7 @@
         transition-duration: 0.4s;
 
         h3 {
-            font-size: 24px;
+            font-size: 18px;
         }
 
         p {

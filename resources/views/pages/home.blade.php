@@ -58,7 +58,8 @@
     <div class="contact--content">
         <h1>Contact me</h1>
         <p>Please feel free to fill in the form below and get in touch.</p>
-        <p> Wether it's for a quote, some feedback or any questions you many about electronics or my services.<br> I will
+        <p> Wether it's for a quote, some feedback or any questions you many about electronics or my services.<br> I
+            will
             respond as soon as possible. You can also contact me on facebook.</p>
 
         <form action="/" method="POST">
@@ -71,7 +72,7 @@
                 </div>
 
                 <div class="contact--query">
-                    <textarea name="query" id="query" cols="30" rows="9" placeholder="Query"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="9" placeholder="message"></textarea>
                 </div>
             </div>
 
@@ -91,24 +92,45 @@
     <div class="testimonials--title">
         <h1>What customers say about my work</h1>
     </div>
-    <div class="testimonials--customer">
-        <h1>
-            <sup><i class="fas fa-quote-left"></i></sup>
-            ipsum dolor sit amet consectetur adipisicing elit. Corrupti possimus facere eveniet accusamus officiis sapiente veniam iure sit. Voluptates earum, dolorem aspernatur corporis odit vero autem cumque numquam provident beatae.
-            <sup><i class="fas fa-quote-right"></i></sup>
-        </h1>
+    {{-- slider --}}
+    <div class="slider">
+        {{-- testimonial --}}
+        <div class="testimonials--customer">
+            <h1>
+                <sup><i class="fas fa-quote-left"></i></sup>
+                The dear the had vast but whence who. He her had taste flow and and done sighed. Wins old deemed they was happy, none consecrate what wandered a condole third change break and. It the all when drowsy and to.
+                <sup><i class="fas fa-quote-right"></i></sup>
+            </h1>
 
-        <h5>Random Person, North Wales</h5>
+            <h5>Person One, North Wales</h5>
 
-        <div class="testimonials--rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half"></i>
+            <div class="testimonials--rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
         </div>
+        {{-- testimonial --}}
+        <div class="testimonials--customer">
+            <h1>
+                <sup><i class="fas fa-quote-left"></i></sup>
+               Dolor diam lorem lorem takimata clita consetetur clita invidunt. Ipsum eirmod nonumy consetetur dolores accusam sit invidunt ut ipsum, diam diam sit sed ea diam sed. Stet ut rebum ipsum kasd dolor, no et elitr sit duo diam lorem kasd.
+                <sup><i class="fas fa-quote-right"></i></sup>
+            </h1>
 
+            <h5>Person 2, North Wales</h5>
+
+            <div class="testimonials--rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+        </div>
     </div>
+    {{-- end slider --}}
+
     <div class="arrow" id="testimonials_arrow">
         <a href="#footer">
             <i class="fas fa-chevron-down fa-bounce"></i>
@@ -116,6 +138,7 @@
     </div>
 </section>
 {{-- END TESTIMONIALS --}}
+
 {{-- END MAIN --}}
 
 @endsection
