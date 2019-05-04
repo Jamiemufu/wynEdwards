@@ -13,7 +13,7 @@
     .testimonials--title {
         width: 100%;
         max-width: 1200px;
-        padding: 40px;
+        padding: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,8 +30,7 @@
         }
 
         @media screen {
-            padding: 20px;
-            
+
             h1 {
                 font-size: 28px;
             }

@@ -11040,7 +11040,7 @@ a.text-dark:focus {
 .testimonials .testimonials--title {
   width: 100%;
   max-width: 1200px;
-  padding: 40px;
+  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11067,10 +11067,6 @@ a.text-dark:focus {
 }
 
 @media screen {
-  .testimonials .testimonials--title {
-    padding: 20px;
-  }
-
   .testimonials .testimonials--title h1 {
     font-size: 28px;
   }
@@ -11187,7 +11183,7 @@ footer i {
 footer .footer--title {
   width: 100%;
   max-width: 600px;
-  padding: 25px 40px;
+  padding: 60px 40px 20px 40px;
 }
 
 footer .footer--title h1 {
@@ -11203,6 +11199,10 @@ footer .footer--title p {
 }
 
 @media screen {
+  footer .footer--title {
+    padding: 60px 15px 20px 15px;
+  }
+
   footer .footer--title p {
     padding-top: 15px;
   }
@@ -11228,7 +11228,7 @@ footer .footer--map #map {
 
 @media screen {
   footer .footer--map {
-    padding: 15px 20px;
+    padding: 15px;
   }
 }
 
@@ -11250,7 +11250,7 @@ footer .footer--social__title p {
 
 @media screen {
   footer .footer--social__title {
-    padding: 15px;
+    padding: 25px;
   }
 }
 
@@ -11299,7 +11299,7 @@ footer .footer--social .fa-phone-envelope {
 
 @media screen {
   footer .footer--social {
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 

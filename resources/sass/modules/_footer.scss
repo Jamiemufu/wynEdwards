@@ -26,7 +26,7 @@ footer {
     .footer--title {
         width: 100%;
         max-width: 600px;
-        padding: 25px 40px;
+        padding: 60px 40px 20px 40px;
 
         h1 {
             font-family: $font-brand;
@@ -41,7 +41,7 @@ footer {
         }
 
         @media screen {
-
+            padding: 60px 15px 20px 15px;;
             p {
                 padding-top: 15px;
             }
@@ -66,7 +66,7 @@ footer {
         }
 
         @media screen {
-            padding: 15px 20px;
+            padding: 15px;
         }
 
         @media (max-width: 500px) {
@@ -86,7 +86,7 @@ footer {
         }
 
         @media screen {
-            padding: 15px;
+            padding: 25px;
         }
     }
 
@@ -122,7 +122,7 @@ footer {
             color: $brandgray;
         }
         @media screen {
-            padding: 15px;
+            padding: 0 15px;
         }
 
     }
