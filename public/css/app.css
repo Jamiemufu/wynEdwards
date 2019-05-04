@@ -1,15 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);@import url(https://fonts.googleapis.com/css?family=Bad+Script);nav {
-  position: absolute;
-  left: 0;
-}
-
-nav i {
-  padding: 25px;
-  font-size: 30px;
-  color: #96989A;
-}
-
-/*!
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,700);@import url(https://fonts.googleapis.com/css?family=Bad+Script);/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10503,7 +10492,8 @@ a.text-dark:focus {
 #services_arrow,
 #contact_arrow,
 #intro_arrow,
-#splash_arrow {
+#splash_arrow,
+#testimonials_arrow {
   position: absolute;
   bottom: 4%;
   left: 0;
@@ -10514,7 +10504,8 @@ a.text-dark:focus {
 #services_arrow i,
 #contact_arrow i,
 #intro_arrow i,
-#splash_arrow i {
+#splash_arrow i,
+#testimonials_arrow i {
   text-align: center;
   color: black;
   font-size: 50px;
@@ -10524,7 +10515,8 @@ a.text-dark:focus {
   #services_arrow,
   #contact_arrow,
   #intro_arrow,
-  #splash_arrow {
+  #splash_arrow,
+  #testimonials_arrow {
     bottom: 1%;
   }
 }
@@ -10539,6 +10531,10 @@ a.text-dark:focus {
 
 #contact_arrow i {
   color: white;
+}
+
+#testimonials_arrow i {
+  color: black;
 }
 
 .fa-bounce {
@@ -10693,6 +10689,30 @@ a.text-dark:focus {
   width: auto;
 }
 
+.card .card--title {
+  width: 100%;
+  position: absolute;
+  padding: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card--title h2 {
+  font-size: 24px;
+  padding: 9px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-shadow: black 1px 1px 1px;
+}
+
 .card .card--content {
   background: rgba(241, 97, 0, 0.7);
   position: absolute;
@@ -10717,6 +10737,14 @@ a.text-dark:focus {
           transition-duration: 0.4s;
 }
 
+.card .card--content h3 {
+  font-size: 24px;
+}
+
+.card .card--content p {
+  font-size: 14px;
+}
+
 .card:active,
 .card:hover .card--img {
   filter: blur(7px);
@@ -10726,6 +10754,11 @@ a.text-dark:focus {
 .card:active,
 .card:hover .card--content {
   opacity: 1;
+}
+
+.card:active,
+.card:hover .card--title {
+  display: none;
 }
 
 .intro {
@@ -10857,18 +10890,22 @@ a.text-dark:focus {
 .contact--content form input {
   border: none;
   border-radius: 5px;
+  border: 1px solid #F16100;
   margin: 18px;
   padding: 12px;
   width: 100%;
   max-width: 400px;
+  outline: none;
 }
 
 .contact--content form textarea {
   border: none;
-  border-radius: 12px;
+  border: 1px solid #F16100;
+  border-radius: 5px;
   padding: 8px;
   width: 100%;
   max-width: 400px;
+  outline: none;
 }
 
 .contact--content form button {
@@ -10973,6 +11010,269 @@ a.text-dark:focus {
   .contact--content h1 {
     line-height: 50px;
     font-size: 38px;
+  }
+}
+
+.testimonials {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.testimonials .testimonials--title {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonials--title h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonials .testimonials--title p {
+  font-size: 18px;
+}
+
+.testimonials .testimonials--customer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+
+.testimonials .testimonials--customer h5 {
+  text-align: right;
+  padding-top: 25px;
+  font-weight: 400;
+}
+
+.testimonials .testimonials--customer h1 {
+  line-height: 48px;
+  font-size: 34px;
+}
+
+.testimonials .testimonials--customer i {
+  font-size: 22px;
+}
+
+.testimonials .testimonials--rating {
+  padding: 25px 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonials .testimonials--rating i {
+  color: gold;
+  font-size: 42px;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+}
+
+nav i {
+  padding: 25px;
+  font-size: 30px;
+  color: #96989A;
+}
+
+footer {
+  position: relative;
+  min-height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+footer i {
+  font-size: 54px;
+  padding: 30px;
+}
+
+footer .footer--title {
+  width: 100%;
+  max-width: 600px;
+  padding: 25px 40px;
+}
+
+footer .footer--title h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer .footer--title p {
+  margin: 15px;
+  text-align: center;
+}
+
+footer .footer--map {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+footer .footer--map #map {
+  margin: auto;
+  display: block;
+  border-radius: 7px;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 1px solid #F16100;
+}
+
+@media (max-width: 500px) {
+  footer .footer--map .map {
+    width: 100%;
+  }
+}
+
+footer .footer--social__title {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+}
+
+footer .footer--social__title p {
+  text-align: center;
+}
+
+footer .footer--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 25px;
+}
+
+footer .footer--social .fa-facebook {
+  color: #3b5998;
+}
+
+footer .footer--social .fa-twitter {
+  color: #1DA1F2;
+}
+
+footer .footer--social .fa-instagram {
+  color: #8a3ab9;
+}
+
+footer .footer--social .fa-snapchat {
+  color: #fffc00;
+}
+
+footer .footer--social .fa-phone-square {
+  color: green;
+}
+
+footer .footer--social .fa-phone-envelope {
+  color: #96989A;
+}
+
+footer .footer--qualified {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer--qualified img {
+  margin: 45px 25px;
+  height: 75px;
+}
+
+footer .footer--terms {
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  text-align: center;
+}
+
+footer .footer--terms p {
+  font-size: 12px;
+}
+
+@media (max-width: 750px) {
+  footer .footer--terms {
+    position: relative;
   }
 }
 

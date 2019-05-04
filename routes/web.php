@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::post('/', function () {
+    return view('pages.home');
+});

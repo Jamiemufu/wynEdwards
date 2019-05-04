@@ -23,10 +23,22 @@
             @yield('content')
     </div>
        
-    <footer>
+    <footer id="footer">
         @include('includes.footer')
     </footer>
     {{-- Javascript Scripts --}}
+    <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 53.0711, lng: -3.8081 },
+                    scrollwheel: false,
+                    zoom: 8,
+                    mapTypeControl: false,
+                    disableDefaultUI: true
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjJwyNzuGN9Wg-HTZ4exFoVIr5dkFQ3k&callback=initMap" async defer></script>
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="{{ mix('/js/script.js') }}"></script>
 </body>

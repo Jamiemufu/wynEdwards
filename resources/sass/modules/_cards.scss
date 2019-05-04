@@ -49,6 +49,25 @@
 
     }
 
+    .card--title {
+
+        width: 100%;
+        position: absolute;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 24px;
+            padding: 9px;
+            background: rgba($color: black, $alpha: 0.7);
+            color: white;
+            text-shadow: black 1px 1px 1px;
+        }
+    }
+
     .card--content {
         background:
             rgba($color: $brandorange, $alpha: 0.7);
@@ -62,20 +81,30 @@
         align-items: center;
         justify-content: space-evenly;
         transition-duration: 0.4s;
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 
 }
 
 .card:active,
 .card:hover .card--img {
-
     filter: blur(7px);
     -webkit-filter: blur(7px);
-
 }
 
 .card:active,
 .card:hover .card--content {
     opacity: 1;
+}
 
+.card:active,
+.card:hover .card--title {
+    display: none;
 }

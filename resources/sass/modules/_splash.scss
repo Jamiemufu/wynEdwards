@@ -13,7 +13,7 @@
 
 /* ARROW */
 
-#services_arrow,#contact_arrow, #intro_arrow, #splash_arrow {
+#services_arrow,#contact_arrow, #intro_arrow, #splash_arrow, #testimonials_arrow {
     position: absolute;
     bottom: 4%;
     left: 0;
@@ -46,6 +46,12 @@
 #contact_arrow {
     i {
         color: white;
+    }
+}
+
+#testimonials_arrow {
+    i {
+        color: black;
     }
 }
 

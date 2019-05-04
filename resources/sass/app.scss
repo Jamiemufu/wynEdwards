@@ -4,11 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 // Variables
-@import 'modules/variables';
-
-//header/footer
-@import 'modules/header';
-@import 'modules/footer';
+@import 'modules/variables.scss';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
@@ -19,6 +15,10 @@
 @import 'modules/cards.scss';
 @import 'modules/intro.scss';
 @import 'modules/contact.scss';
+@import 'modules/testimonial.scss';
+//header/footer
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
 
 //Styles
 body {
