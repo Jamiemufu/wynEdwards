@@ -131,11 +131,6 @@
     </div>
     {{-- end slider --}}
 
-    <div class="arrow" id="testimonials_arrow">
-        <a href="#footer">
-            <i class="fas fa-chevron-down fa-bounce"></i>
-        </a>
-    </div>
 </section>
 {{-- END TESTIMONIALS --}}
 

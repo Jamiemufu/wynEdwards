@@ -11012,7 +11012,6 @@ a.text-dark:focus {
 }
 
 .testimonials {
-  min-height: 100vh;
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -11186,6 +11185,7 @@ footer .footer--map #map {
   border-radius: 7px;
   padding: 0;
   width: 100%;
+  padding: 40px;
   max-width: 500px;
   height: 300px;
   border: 1px solid #F16100;

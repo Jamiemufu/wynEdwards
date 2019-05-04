@@ -1,4 +1,7 @@
+$('.splash').height($(window).height()/2);
+
 $(document).ready(function(){
+  //set 100vh fix for mobiles on each container thats vh
   $('.slider').slick({
       autoplay: true,
       autoplaySpeed: 6000,
