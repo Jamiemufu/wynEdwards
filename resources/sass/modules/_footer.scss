@@ -35,8 +35,16 @@ footer {
         }
 
         p {
+            padding-top: 50px;
             margin: 15px;
             text-align: center;
+        }
+
+        @media screen {
+
+            p {
+                padding-top: 15px;
+            }
         }
     }
 
@@ -57,6 +65,10 @@ footer {
             border: 1px solid $brandorange;
         }
 
+        @media screen {
+            padding: 15px 20px;
+        }
+
         @media (max-width: 500px) {
             .map {
                 width: 100%;
@@ -67,10 +79,14 @@ footer {
     .footer--social__title {
         width: 100%;
         max-width: 600px;
-        padding: 15px;
+        padding: 50px;
         
         p {
             text-align: center;
+        }
+
+        @media screen {
+            padding: 15px;
         }
     }
 
@@ -105,6 +121,9 @@ footer {
         .fa-phone-envelope {
             color: $brandgray;
         }
+        @media screen {
+            padding: 15px;
+        }
 
     }
 
@@ -124,8 +143,6 @@ footer {
     }
 
     .footer--terms {
-        position: absolute;
-        bottom: 0;
         padding: 25px;
         text-align: center;
         p {

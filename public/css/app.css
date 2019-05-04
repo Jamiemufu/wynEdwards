@@ -10843,7 +10843,6 @@ a.text-dark:focus {
   position: relative;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  height: 100%;
   width: 100%;
   background: #96989A;
   padding: 100px 20px 100px 20px;
@@ -11017,6 +11016,8 @@ a.text-dark:focus {
 .testimonials {
   position: relative;
   width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11065,6 +11066,16 @@ a.text-dark:focus {
   font-size: 18px;
 }
 
+@media screen {
+  .testimonials .testimonials--title {
+    padding: 20px;
+  }
+
+  .testimonials .testimonials--title h1 {
+    font-size: 28px;
+  }
+}
+
 .testimonials .slider {
   width: 100%;
   max-width: 1200px;
@@ -11104,8 +11115,15 @@ a.text-dark:focus {
   font-size: 22px;
 }
 
+@media screen {
+  .testimonials .testimonials--customer h1 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
 .testimonials .testimonials--rating {
-  padding: 25px 25px;
+  padding: 100px 25px;
   margin: auto;
   text-align: center;
 }
@@ -11113,6 +11131,12 @@ a.text-dark:focus {
 .testimonials .testimonials--rating i {
   color: gold;
   font-size: 42px;
+}
+
+@media screen {
+  .testimonials .testimonials--rating {
+    padding: 25px 15px 100px 25px;
+  }
 }
 
 nav {
@@ -11173,8 +11197,15 @@ footer .footer--title h1 {
 }
 
 footer .footer--title p {
+  padding-top: 50px;
   margin: 15px;
   text-align: center;
+}
+
+@media screen {
+  footer .footer--title p {
+    padding-top: 15px;
+  }
 }
 
 footer .footer--map {
@@ -11195,6 +11226,12 @@ footer .footer--map #map {
   border: 1px solid #F16100;
 }
 
+@media screen {
+  footer .footer--map {
+    padding: 15px 20px;
+  }
+}
+
 @media (max-width: 500px) {
   footer .footer--map .map {
     width: 100%;
@@ -11204,11 +11241,17 @@ footer .footer--map #map {
 footer .footer--social__title {
   width: 100%;
   max-width: 600px;
-  padding: 15px;
+  padding: 50px;
 }
 
 footer .footer--social__title p {
   text-align: center;
+}
+
+@media screen {
+  footer .footer--social__title {
+    padding: 15px;
+  }
 }
 
 footer .footer--social {
@@ -11254,6 +11297,12 @@ footer .footer--social .fa-phone-envelope {
   color: #96989A;
 }
 
+@media screen {
+  footer .footer--social {
+    padding: 15px;
+  }
+}
+
 footer .footer--qualified {
   width: 100%;
   max-width: 1200px;
@@ -11280,8 +11329,6 @@ footer .footer--qualified img {
 }
 
 footer .footer--terms {
-  position: absolute;
-  bottom: 0;
   padding: 25px;
   text-align: center;
 }
