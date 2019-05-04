@@ -25,7 +25,7 @@
 
 <div class="footer--qualified">
     <img src="{{asset('images/expert.jpg')}}" alt="">
-    <img src="{{asset('images/electrical_Safety_Council.jpg')}}" alt="">
+    <img src="{{asset('images/Electrical_Safety_Council.jpg')}}" alt="">
     <img src="{{asset('images/cityandguilds.png')}}" alt="">
 </div>
 
