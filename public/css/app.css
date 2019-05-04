@@ -10615,7 +10615,7 @@ a.text-dark:focus {
 .services--content h1 {
   font-weight: bold;
   line-height: 70px;
-  font-size: 45px;
+  font-size: 38px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
 }
@@ -11060,16 +11060,11 @@ a.text-dark:focus {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   text-align: center;
+  font-size: 38px;
 }
 
 .testimonials .testimonials--title p {
   font-size: 18px;
-}
-
-@media screen {
-  .testimonials .testimonials--title h1 {
-    font-size: 28px;
-  }
 }
 
 .testimonials .slider {
@@ -11165,6 +11160,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer h1 {
+  font-size: 38px;
 }
 
 footer p {

@@ -90,7 +90,7 @@
 {{-- TESTIMONIALS --}}
 <section class="testimonials" id="testimonials">
     <div class="testimonials--title">
-        <h1>What customers say about my work</h1>
+        <h1>What customers say...</h1>
     </div>
     {{-- slider --}}
     <div class="slider">
