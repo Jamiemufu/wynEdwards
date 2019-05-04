@@ -8,9 +8,9 @@
         <div class="card--img">
             <img src="{{ asset('images/rewire.jpg') }}" alt="" width="100%">
         </div>
-        {{-- <div class="card--title">
+        <div class="card--title">
             <h2>Full Electrical Re-wires</h2>
-        </div> --}}
+        </div>
         {{-- card content - will grow --}}
         <div class="card--content">
             <h3>Full Electrical Re-wires</h3>
